@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="css/reset.css"> <!-- 리셋css를 위로 -->
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.9.0/css/all.min.css" />
+</head>
+
+<body>
+
+    <div class="shop">
+        <header>
+            <img src="images/menu_Icon_left.svg" alt="menu_Icon_left " class="menu_Icon_left">
+            <h2>Shop Categories</h2>
+            <img src="images/menu_Icon_right.svg" alt="menu_Icon_right" class="menu_Icon_right">
+        </header>
+
+        <div class="Shop_Categories">
+            <div><img src="images/caterory_slide_01.jpg" alt=""></div>
+            <div><img src="images/caterory_slide_02.jpg" alt=""></div>
+            <div><img src="images/caterory_slide_03.jpg" alt=""></div>
+        </div>
+
+
+        <!-- ct_product -->
+        <div class="product_item">
+            <div>
+                <img src="images/category_product_01.jpg" alt="">
+                <h3>T-shirts</h3>
+                <h4>2.5k Styles</h4>
+            </div>
+            <div class="item2">
+                <img src="images/category_product_02.jpg" alt="">
+                <h3>Shoes</h3>
+                <h4>1.5k Styles</h4>
+            </div>
+            <div>
+                <img src="images/category_product_03.jpg" alt="">
+                <h3>T-shirts</h3>
+                <h4>2.5k Styles</h4>
+            </div>
+            <div class="item4">
+                <img src="images/category_product_04.jpg" alt="">
+                <h3>T-shirts</h3>
+                <h4>2.5k Styles</h4>
+            </div>
+
+
+
+            
+            <!--     jquery 1.min 연결 -->
+            <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+            <!--    slick cdn 'min.js'연결  -->
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
+            <script>
+                // slick(Initialize your slider in your script file or an inline script tag) 복붙 연결 
+                $('.Shop_Categories').slick({
+                    // slick-github-닷 표시             
+                    arrows: false,
+                    dots: true,
+                    autoplat: true
+                });
+            </script>
+
+</body>
+
+</html>
